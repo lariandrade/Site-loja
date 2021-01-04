@@ -7,9 +7,10 @@
     box-sizing: border-box;
 }
 
-a {
+a, ul {
     text-decoration: none;
     color: #000000;
+    list-style: none;
 }
 
 .container {
@@ -45,10 +46,10 @@ a {
 
 main {
     margin-top: 30px;
+    height: 360px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 360px;
 }
 
 main img {
@@ -62,4 +63,35 @@ main img:hover {
     width: 350px;
     height: 350px;
     transition: 1s ease;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;  
+    margin: 20px 0 0 20%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.servicos h2 {
+    text-transform: uppercase;
+}
+
+.servicos ul li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+i {
+    margin-right: 10px;
+    
+}
+
+.servicos li:hover {
+    color: #345995;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;  
+    margin: 20px 0 0 20%;
 }
