@@ -13,6 +13,12 @@ a, ul {
     list-style: none;
 }
 
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+
 .container {
     background-color: #ace9ee;
     display: flex;
@@ -65,15 +71,11 @@ main img:hover {
     transition: 1s ease;
 }
 
-.servicos {
+.servicos, .contato {
     display: flex;
     flex-direction: column;  
     margin: 20px 0 0 20%;
     font-family: 'Montserrat', sans-serif;
-}
-
-.servicos h2 {
-    text-transform: uppercase;
 }
 
 .servicos ul li {
@@ -81,17 +83,24 @@ main img:hover {
     cursor: pointer;
 }
 
+.servicos ul li:hover {
+    color: #345995;
+}
+
 i {
     margin-right: 10px;
     
 }
 
-.servicos li:hover {
-    color: #345995;
+.contato ul li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contato img {
+    width: 200px;
+    height: 200px;
 }
 
-.contato {
-    display: flex;
-    flex-direction: column;  
-    margin: 20px 0 0 20%;
+.contato ul li:hover {
+    color: #345995;
 }
