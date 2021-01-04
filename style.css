@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.container {
+    background-color: #ace9ee;
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+    font-family: 'Flamenco', cursive;
+}
+
+#logo {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-wrapper {
+    display: flex;
+    align-items: center;  
+}
+.menu {
+    margin-left: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 360px;
+}
+
+main img {
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+main img:hover {
+    width: 350px;
+    height: 350px;
+    transition: 1s ease;
+}
