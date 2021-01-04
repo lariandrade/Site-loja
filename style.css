@@ -39,7 +39,7 @@ h2 {
 }
 .menu {
     margin-left: 30px;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     cursor: pointer;
     font-weight: bold;
@@ -79,12 +79,23 @@ main img:hover {
 }
 
 .servicos ul li {
-    margin: 10px 0;
+    margin: 20px 0;
     cursor: pointer;
 }
 
 .servicos ul li:hover {
     color: #345995;
+}
+
+.servicos img {
+    width: 150px;
+    height: 150px;
+    margin-left: 10%;
+}
+
+.servicos-wrapper {
+    display: flex;
+    flex-direction: row;
 }
 
 i {
@@ -93,12 +104,14 @@ i {
 }
 
 .contato ul li {
-    margin: 10px 0;
+    margin: 20px 0;
     cursor: pointer;
 }
 .contato img {
     width: 200px;
     height: 200px;
+    border: 1px solid #000000;
+    margin: 20px 0;
 }
 
 .contato ul li:hover {
