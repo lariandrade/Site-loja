@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+:root {
+    --blue: #ace9ee;
+    --black: #000000;
+    --white: #ffffff;
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +14,7 @@
 
 a, ul {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white);
     list-style: none;
 }
 
@@ -20,19 +25,20 @@ h2 {
 
 
 .container {
-    background-color: #ace9ee;
+    background-color: var(--blue);
     display: flex;
     justify-content: space-evenly;
     height: 70px;
     font-family: 'Flamenco', cursive;
-    background-color: #000000;
+    background-color: var(--black);
 }
 
 #logo {
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     align-items: center;
-    color: #ffffff;
+    color: var(--white);
+    text-transform: uppercase;
 }
 
 .menu-wrapper {
@@ -46,59 +52,66 @@ h2 {
     cursor: pointer;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    color: var(--white);
+
 }
 
 .menu a:hover {
-    color: #ace9ee;
+    color: var(--blue);
 }
 
 main {
-    margin-top: 30px;
-    height: 360px;
+    height: 380px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: var(--black);
 }
 
 main img {
     width: 300px;
     height: 300px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 30px 10px 10px 0;
+    border: 1px solid var(--white);
 }
 
 main img:hover {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     transition: 1s ease;
 }
+
+.container-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
 
 .servicos, .contato {
     display: flex;
     flex-direction: column;  
-    margin: 20px 0 0 20%;
+    margin: 40px 0px 0 0;
     font-family: 'Montserrat', sans-serif;
+    width: 300px;
 }
 
 .servicos ul li {
     margin: 20px 0;
     cursor: pointer;
+    color: var(--black);
+   
 }
 
 .servicos ul li:hover {
-    color: #345995;
+    color: var(--blue);
 }
 
 .servicos img {
     width: 150px;
     height: 150px;
     margin-left: 10%;
-}
-
-.servicos-wrapper {
-    display: flex;
-    flex-direction: row;
 }
 
 i {
@@ -109,14 +122,39 @@ i {
 .contato ul li {
     margin: 20px 0;
     cursor: pointer;
+    color: var(--black);
+    position: relative;
+    top: -190px;
+    left: 80%
 }
 .contato img {
     width: 200px;
     height: 200px;
-    border: 1px solid #000000;
+    border: 1px solid var(--black);
     margin: 20px 0;
 }
 
 .contato ul li:hover {
-    color: #345995;
+    color: var(--blue);
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    height: 280px;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container-footer p {
+    align-self: center;
+}
+
+iframe {
+    margin-top: 32px;
 }
