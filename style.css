@@ -10,12 +10,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-a, ul {
-    text-decoration: none;
+a {
     color: var(--white);
-    list-style: none;
 }
 
 h2 {
@@ -85,7 +85,7 @@ main img:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 
@@ -99,13 +99,8 @@ main img:hover {
 
 .servicos ul li {
     margin: 20px 0;
-    cursor: pointer;
     color: var(--black);
    
-}
-
-.servicos ul li:hover {
-    color: var(--blue);
 }
 
 .servicos img {
@@ -120,13 +115,25 @@ i {
 }
 
 .contato ul li {
-    margin: 20px 0;
+    margin: 20px 10px;
     cursor: pointer;
-    color: var(--black);
     position: relative;
     top: -190px;
-    left: 80%
+    left: 80%;
+    color: var(--black);
 }
+
+.contato a {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
+    margin-left: 10px;
+    
+}
+
+.contato a:hover {
+    color: var(--blue);
+}
+
 .contato img {
     width: 200px;
     height: 200px;
@@ -189,9 +196,7 @@ iframe {
         width: 300px;
         height: 300px;
     }
-}
-
-@media (max-width: 882px) {
+    
     .container-section {
         flex-direction: column;
         align-items: center;
@@ -206,6 +211,7 @@ iframe {
     }
 }
 
+
 @media (max-width: 670px) {
     
     main {
@@ -219,8 +225,8 @@ iframe {
     }
 
     main img:hover {
-        width: 320px;
-        height: 320px;
+        width: 330px;
+        height: 330px;
     }
 
     .container-footer {
