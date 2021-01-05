@@ -9,7 +9,7 @@
 
 a, ul {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     list-style: none;
 }
 
@@ -25,12 +25,14 @@ h2 {
     justify-content: space-evenly;
     height: 70px;
     font-family: 'Flamenco', cursive;
+    background-color: #000000;
 }
 
 #logo {
     font-size: 40px;
     display: flex;
     align-items: center;
+    color: #ffffff;
 }
 
 .menu-wrapper {
@@ -44,10 +46,11 @@ h2 {
     cursor: pointer;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
 }
 
 .menu a:hover {
-    color: #ffffff;
+    color: #ace9ee;
 }
 
 main {
